@@ -1,0 +1,36 @@
+.mm-autocomplete .MuiAutocomplete-inputRoot {
+  @apply flex gap-1;
+}
+
+/** Chips */
+.mm-autocomplete .MuiAutocomplete-inputRoot .MuiAutocomplete-tag {
+  height: unset;
+  @apply text-tags rounded-none m-0 bg-blue-secondary px-1;
+}
+
+.mm-autocomplete
+  .MuiAutocomplete-inputRoot
+  .MuiAutocomplete-tag
+  .MuiChip-label {
+  @apply px-0;
+}
+
+/** Close icon */
+
+.mm-autocomplete
+  .MuiAutocomplete-inputRoot
+  .MuiAutocomplete-tag
+  .MuiSvgIcon-root {
+  @apply w-[10px] mx-0 ml-1;
+}
+
+/** Input */
+.mm-autocomplete.MuiAutocomplete-root
+  .MuiOutlinedInput-root
+  .MuiAutocomplete-input {
+  @apply py-0;
+}
+
+.mm-autocomplete .MuiOutlinedInput-root.MuiAutocomplete-inputRoot {
+  @apply p-2;
+}

@@ -1,0 +1,124 @@
+@tailwind base;
+@layer base {
+  h1 {
+    @apply text-2xl font-semibold;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply text-lg font-semibold;
+  }
+  h4 {
+    @apply text-base font-normal;
+  }
+  h5 {
+    @apply text-sm font-normal;
+  }
+  h6 {
+    @apply text-xs font-normal;
+  }
+  body {
+    @apply text-base font-normal bg-selago;
+  }
+}
+@tailwind components;
+@layer components {
+  /**
+   * Typography
+   */
+
+  .h1 {
+    @apply text-2xl font-semibold;
+  }
+  .h2 {
+    @apply text-xl font-semibold;
+  }
+  .h3 {
+    @apply text-lg font-semibold;
+  }
+  .h6 {
+    @apply text-xs font-normal;
+  }
+  .subtitle1 {
+    @apply text-base font-semibold;
+  }
+  .subtitle2 {
+    @apply text-xs font-semibold text-grey-dark;
+  }
+
+  /**
+   * Table
+   */
+
+  table.styled-table {
+    @apply w-full;
+  }
+  .styled-table tbody {
+    @apply shadow-table rounded;
+  }
+  .styled-table th {
+    @apply text-xs font-normal text-scorpion pb-2 text-left px-5;
+  }
+  .styled-table tr:last-child td {
+    @apply border-none;
+  }
+  .styled-table td {
+    @apply text-xs h-[72px] border-alto border-b px-5;
+  }
+
+  /** Table: compact **/
+  .styled-table.compact tbody {
+    @apply shadow-none;
+  }
+  .styled-table.compact th {
+    @apply text-left px-5 pb-2;
+  }
+  .styled-table.compact td {
+    height: unset;
+    @apply text-left px-5 py-0;
+  }
+}
+
+/**
+ * Utils
+ */
+.tmpUtil-slideWindow {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.tmpUtil-headerHeight {
+  box-sizing: border-box;
+  height: 90px; /* calc(2 * 16px + 57px + 1px) */
+}
+
+.tmpUtil-tabMenuHeight {
+  box-sizing: border-box;
+  height: 48px;
+}
+.tmpUtil-footerHeight {
+  box-sizing: border-box;
+  height: 64px; /* calc(2 * 16px + 31px + 1px) */
+}
+.tmpUtil-slideContentHeight {
+  box-sizing: border-box;
+  height: calc(
+    100vh - 90px - 48px - 64px
+  ); /* slideWindow - header - tabMenu - footer*/
+}
+
+.tmpUtil-pendingListHeight {
+  box-sizing: border-box;
+  height: calc(100vh - 90px - 16px); /* slideWindow - header - b_padding */
+  max-height: calc(100vh - 90px - 16px);
+}
+/**
+ * Imports
+ */
+
+@import "Components/UI/atoms/atoms.css";
+@import "Components/UI/molecules/molecules.css";
+@import "Components/UI/organisms/organisms.css";
+
+@tailwind utilities;

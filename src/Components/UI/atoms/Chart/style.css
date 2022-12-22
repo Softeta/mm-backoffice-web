@@ -1,0 +1,7 @@
+.not-filled-circle {
+  @apply stroke-blue-secondary-hover;
+}
+
+.filled-circle {
+  @apply stroke-blue-main;
+}

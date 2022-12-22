@@ -1,0 +1,8 @@
+/* ContactPersonCard*/
+.contact-person-card {
+  @apply bg-blue-secondary;
+}
+
+.contact-person-card-hover:hover {
+  @apply bg-blue-secondary-hover;
+}

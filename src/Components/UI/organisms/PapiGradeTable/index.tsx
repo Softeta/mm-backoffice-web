@@ -1,0 +1,1 @@
+export { PapiGradeTable } from "./PapiGradeTable";

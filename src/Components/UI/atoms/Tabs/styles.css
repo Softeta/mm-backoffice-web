@@ -1,0 +1,12 @@
+.tabs.MuiTabs-root .MuiTab-textColorPrimary {
+  @apply text-grey-dark font-normal text-xs;
+}
+
+.tabs.MuiTabs-root .Mui-selected {
+  @apply font-semibold text-grey-dark;
+}
+
+/* transition */
+.tabs .MuiTouchRipple-root {
+  @apply hidden;
+}

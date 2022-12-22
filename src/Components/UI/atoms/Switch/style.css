@@ -1,0 +1,9 @@
+/* transition */
+.input-switch .MuiSwitch-root .MuiSwitch-switchBase .MuiTouchRipple-root {
+  @apply hidden;
+}
+
+.input-switch .MuiSwitch-root .MuiSwitch-switchBase:hover,
+.input-switch .MuiSwitch-root .MuiSwitch-switchBase .Mui-checked:hover {
+  @apply bg-transparent;
+}

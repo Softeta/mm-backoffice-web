@@ -1,0 +1,37 @@
+@import "draft-js/dist/Draft.css";
+@import "@draft-js-plugins/static-toolbar/lib/plugin.css";
+@import "@draft-js-plugins/anchor/lib/plugin.css";
+
+.rich-text .toolbar {
+  @apply border-b border-alto bg-grey-light/25;
+}
+
+.rich-text .button {
+  @apply flex items-center justify-center p-1.5;
+}
+
+.rich-text .button:hover,
+.rich-text .button:focus {
+  @apply outline-none;
+}
+
+.rich-text .button:active,
+.rich-text .button.active {
+  @apply bg-blue-secondary-hover;
+}
+
+.rich-text .rich-text-area {
+  @apply text-xs;
+}
+
+.rich-text .rich-text-area h1 {
+  @apply text-lg;
+}
+
+.rich-text .rich-text-area h2 {
+  @apply text-base;
+}
+
+.rich-text .rich-text-area h3 {
+  @apply text-sm;
+}

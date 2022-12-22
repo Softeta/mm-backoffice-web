@@ -1,0 +1,50 @@
+.input-checkbox {
+  @apply pr-2;
+}
+
+/* label */
+.input-checkbox .MuiFormControlLabel-label {
+  @apply text-xs text-grey-middle;
+}
+.input-checkbox:hover .MuiFormControlLabel-label {
+  @apply text-grey-middle-hover;
+}
+
+/* icon */
+.input-checkbox .MuiCheckbox-root {
+  @apply p-1;
+}
+.input-checkbox .MuiCheckbox-root:hover {
+  background-color: unset;
+}
+.input-checkbox .MuiCheckbox-root.Mui-focusVisible .MuiSvgIcon-root {
+  @apply bg-blue-secondary;
+}
+/* icon - svg */
+.input-checkbox .MuiCheckbox-root .MuiSvgIcon-root {
+  @apply h-6 w-auto rounded fill-grey-lightest;
+}
+.input-checkbox .MuiCheckbox-root.Mui-checked .MuiSvgIcon-root {
+  @apply fill-blue-main;
+}
+.input-checkbox:hover .MuiCheckbox-root.Mui-checked .MuiSvgIcon-root {
+  @apply fill-blue-main-hover;
+}
+.input-checkbox .MuiCheckbox-root:not(.Mui-checked) .MuiSvgIcon-root {
+  @apply fill-blue-middle;
+}
+.input-checkbox:hover .MuiCheckbox-root:not(.Mui-checked) .MuiSvgIcon-root {
+  @apply fill-blue-middle;
+}
+.input-checkbox .MuiCheckbox-root.Mui-disabled .MuiSvgIcon-root {
+  @apply rounded-xl;
+}
+.input-checkbox .MuiCheckbox-root.Mui-disabled .MuiSvgIcon-root,
+.input-checkbox:hover .MuiCheckbox-root.Mui-disabled .MuiSvgIcon-root {
+  @apply fill-grey-lightest;
+}
+
+/* transition */
+.input-checkbox .MuiCheckbox-root .MuiTouchRipple-root {
+  @apply hidden;
+}

@@ -1,0 +1,21 @@
+/* calendar*/
+.calendar .MuiPickersDay-root,
+.calendar .PrivatePickersYear-yearButton {
+  @apply text-grey-middle;
+}
+.calendar .MuiPickersDay-root:hover,
+.calendar .PrivatePickersYear-yearButton:hover {
+  @apply text-grey-middle-hover;
+}
+
+/* selected */
+.calendar .MuiPickersDay-root.Mui-selected,
+.calendar .MuiPickersDay-root.Mui-selected:focus,
+.calendar .PrivatePickersYear-yearButton.Mui-selected,
+.calendar .PrivatePickersYear-yearButton.Mui-selected:focus {
+  @apply bg-blue-middle text-grey-middle;
+}
+.calendar .MuiPickersDay-root.Mui-selected:hover,
+.calendar .PrivatePickersYear-yearButton.Mui-selected:hover {
+  @apply bg-blue-middle-hover text-grey-middle-hover;
+}

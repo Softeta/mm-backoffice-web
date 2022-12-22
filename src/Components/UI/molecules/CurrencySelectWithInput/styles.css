@@ -1,0 +1,20 @@
+/* currency select with input */
+.currency-select-with-input
+  .input-select
+  .MuiInput-underline
+  .MuiInputBase-root:hover:not(.Mui-disabled):before,
+.currency-select-with-input
+  .input-select
+  .MuiInput-underline.MuiInputBase-root:before,
+.currency-select-with-input .input-select .MuiInputBase-root:after {
+  @apply border-0;
+}
+
+.currency-select-with-input .MuiInputBase-adornedStart {
+  @apply pl-0;
+  @apply font-normal;
+}
+
+.currency-select-with-input .input-select .MuiInputBase-input {
+  @apply font-normal;
+}

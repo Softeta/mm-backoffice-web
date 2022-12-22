@@ -1,0 +1,62 @@
+/* Container */
+.input-search .MuiInput-root {
+  @apply mt-1.5;
+}
+
+/* Input */
+.input-search .MuiInputBase-input {
+  @apply pb-2 pt-2 text-xs font-semibold text-grey-middle placeholder-grey-middle;
+}
+.input-search .MuiInputBase-root:hover .MuiInputBase-input {
+  @apply text-grey-middle-hover;
+}
+.input-search .MuiInputBase-root.Mui-disabled .MuiInputBase-input {
+  -webkit-text-fill-color: unset;
+  @apply text-grey-lightest placeholder-grey-lightest;
+}
+
+/* Border */
+.input-search div.MuiInput-underline:before,
+.input-search div.MuiInput-underline:after {
+  @apply border-b border-grey-lightest transition-none;
+}
+.input-search div.MuiInput-underline:hover:before {
+  @apply border-b border-grey-lightest;
+}
+.input-search div.MuiInput-underline.Mui-focused:before,
+.input-search div.MuiInput-underline.Mui-focused:after {
+  @apply border-b border-blue-main;
+}
+.input-search div.MuiInput-underline.Mui-disabled:before,
+.input-search div.MuiInput-underline.Mui-disabled:after {
+  border-bottom-style: solid;
+}
+
+/* Label */
+.input-search label:not(.MuiInputLabel-shrink) {
+  @apply text-xs -top-1 font-semibold text-grey-middle;
+}
+.input-search:hover label:not(.MuiInputLabel-shrink) {
+  @apply text-grey-middle-hover;
+}
+.input-search label.Mui-disabled:not(.MuiInputLabel-shrink),
+.input-search:hover label.Mui-disabled:not(.MuiInputLabel-shrink) {
+  @apply text-grey-lightest;
+}
+
+/* Label shrinked */
+.input-search label.MuiInputLabel-shrink.Mui-focused {
+  @apply text-blue-main;
+}
+
+/* Icon */
+.input-search .MuiSvgIcon-root {
+  @apply h-4 w-4 fill-grey-middle;
+}
+.input-search .MuiInputBase-root:hover .MuiSvgIcon-root,
+.input-search .MuiInputBase-root.Mui-focused .MuiSvgIcon-root {
+  @apply fill-grey-middle-hover;
+}
+.input-search .MuiInputBase-root.Mui-disabled .MuiSvgIcon-root {
+  @apply fill-grey-lightest;
+}

@@ -1,0 +1,76 @@
+import JobStages from "Enums/JobStages";
+import { TJobCompanyResponse } from "./Common/jobCompanyResponse";
+import { TJobEmployee } from "./Common/jobEmployee";
+import { TJobYearExperience } from "./Common/jobYearExperience";
+import { TJobFreelance } from "./Common/jobFreelance";
+import { TJobPermanent } from "./Common/jobPermanent";
+import { TPosition } from "../position";
+import { TSkill } from "../skills";
+import { TIndustry } from "../industries";
+import { TLanguage } from "../languages";
+import { TJobInterestedCandidate } from "./Common/jobInterestedCandidate";
+
+export type TJobCalibrationRequest = {
+  ownerId: string;
+  position: TPosition;
+  deadLineDate?: Date;
+  description?: string;
+  industry?: string;
+  startDate?: Date;
+  endDate?: Date;
+  currency?: string;
+  weeklyWorkHours?: number;
+  freelance?: TJobFreelance;
+  permanent?: TJobPermanent;
+  yearExperience?: TJobYearExperience;
+  isPriority: boolean;
+  isUrgent: boolean;
+  workingHourTypes: string[];
+  workTypes: string[];
+  assignedEmployees: string[];
+  skills: TSkill[];
+  industries: TIndustry[];
+  seniorities: string[];
+  languages: TLanguage[];
+  formats: string[];
+  interestedCandidates: string[];
+  interestedLinkedIns: string[];
+};
+
+export type TJobCalibrationResponse = {
+  data: TJobCalibration;
+};
+
+export type TJobCalibration = {
+  company: TJobCompanyResponse;
+  owner: TJobEmployee;
+  position: TPosition;
+  yearExperience?: TJobYearExperience;
+  deadLineDate?: Date;
+  description?: string;
+  stage: JobStages;
+  isPublished: boolean;
+  sharingDate?: Date;
+  startDate?: Date;
+  endDate?: Date;
+  currency?: string;
+  freelance?: TJobFreelance;
+  permanent?: TJobPermanent;
+  weeklyHours?: number;
+  isPriority: boolean;
+  isUrgent: boolean;
+  workingHourTypes?: string[];
+  workTypes: string[];
+  assignedEmployees: TJobEmployee[];
+  skills: TSkill[];
+  industries: TIndustry[];
+  seniorities: string[];
+  languages: TLanguage[];
+  formats: string[];
+  isArchived: boolean;
+  isActivated: boolean;
+  parentJobId?: string;
+  isSelectionStarted: boolean;
+  interestedCandidates: TJobInterestedCandidate[];
+  interestedLinkedIns: string[];
+};

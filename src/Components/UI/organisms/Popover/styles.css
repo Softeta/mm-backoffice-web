@@ -1,0 +1,4 @@
+/* Popover */
+.popover .MuiPaper-root {
+  @apply shadow-modal rounded-2xl;
+}

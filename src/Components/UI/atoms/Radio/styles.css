@@ -1,0 +1,51 @@
+/**
+   * Radio
+   */
+.input-radio {
+  @apply w-min pr-2;
+}
+
+/* label */
+.input-radio .MuiFormControlLabel-label {
+  @apply text-xs text-grey-middle;
+}
+.input-radio:hover .MuiFormControlLabel-label {
+  @apply text-grey-middle-hover;
+}
+
+/* icon */
+.input-radio .MuiRadio-root {
+  @apply p-1;
+}
+.input-radio .MuiRadio-root:hover {
+  background-color: unset;
+}
+.input-radio .MuiRadio-root.Mui-focusVisible .MuiSvgIcon-root {
+  @apply bg-blue-secondary;
+}
+
+/* icon - svg */
+.input-radio .MuiRadio-root .MuiSvgIcon-root {
+  @apply h-6 w-auto rounded fill-grey-lightest;
+}
+.input-radio .MuiRadio-root.Mui-checked .MuiSvgIcon-root {
+  @apply fill-blue-main;
+}
+.input-radio:hover .MuiRadio-root.Mui-checked .MuiSvgIcon-root {
+  @apply fill-blue-main-hover;
+}
+.input-radio .MuiRadio-root:not(.Mui-checked) .MuiSvgIcon-root {
+  @apply fill-grey-lightest;
+}
+.input-radio:hover .MuiRadio-root:not(.Mui-checked) .MuiSvgIcon-root {
+  @apply fill-blue-main;
+}
+.input-radio .MuiRadio-root.Mui-disabled .MuiSvgIcon-root,
+.input-radio:hover .MuiRadio-root.Mui-disabled .MuiSvgIcon-root {
+  @apply fill-grey-lightest;
+}
+
+/* transition */
+.input-radio .MuiRadio-root .MuiTouchRipple-root {
+  @apply hidden;
+}

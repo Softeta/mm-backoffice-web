@@ -1,0 +1,12 @@
+.phone-input .input-select {
+  @apply mt-0 -mr-2;
+}
+
+.phone-input .MuiOutlinedInput-root.MuiInputBase-root {
+  @apply pl-0;
+}
+
+.phone-input
+  .MuiOutlinedInput-input.MuiInputBase-input.MuiInputBase-inputAdornedStart {
+  @apply pl-0;
+}

@@ -1,0 +1,1 @@
+export { GradeScore } from "./GradeScore";

@@ -1,0 +1,19 @@
+/**
+   * Menu Item
+   */
+.menu-item.MuiMenuItem-root {
+  min-height: unset;
+  @apply p-2 text-xs font-semibold text-grey-middle;
+}
+.menu-item.MuiMenuItem-root:hover {
+  @apply text-grey-middle-hover bg-light-hover;
+}
+.menu-item.MuiMenuItem-root.Mui-selected,
+.menu-item.MuiMenuItem-root.Mui-selected:hover {
+  @apply bg-blue-secondary;
+}
+
+/* transition */
+.menu-item.MuiMenuItem-root .MuiTouchRipple-root {
+  @apply hidden;
+}

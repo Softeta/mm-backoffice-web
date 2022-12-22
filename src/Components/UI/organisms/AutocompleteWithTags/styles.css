@@ -1,0 +1,47 @@
+/** */
+.select-with-tags .MuiInputBase-root {
+  @apply p-2 flex justify-between;
+}
+
+/* Border */
+.select-with-tags .MuiOutlinedInput-root fieldset {
+  @apply border-grey-lightest;
+}
+.select-with-tags .MuiOutlinedInput-root.Mui-focused fieldset {
+  @apply border border-blue-main;
+}
+.select-with-tags:focus-within .MuiOutlinedInput-root fieldset,
+.select-with-tags:focus-within
+  .MuiOutlinedInput-root:not(.Mui-focused):hover
+  fieldset {
+  @apply border border-blue-main;
+}
+.select-with-tags .MuiOutlinedInput-root:not(.Mui-focused):hover fieldset {
+  @apply border-grey-lightest;
+}
+
+/* Label */
+.select-with-tags label:not(.MuiInputLabel-shrink) {
+  @apply p-2 -top-4 -left-3 text-xs font-semibold text-grey-middle;
+}
+.select-with-tags:hover label:not(.MuiInputLabel-shrink) {
+  @apply text-grey-middle-hover;
+}
+.select-with-tags label.Mui-disabled:not(.MuiInputLabel-shrink) {
+  @apply text-grey-lightest;
+}
+.select-with-tags:hover label.Mui-disabled:not(.MuiInputLabel-shrink) {
+  @apply text-grey-lightest;
+}
+
+/* Label shrinked */
+.select-with-tags fieldset {
+  @apply pl-1 pr-1;
+}
+.select-with-tags label.MuiInputLabel-shrink {
+  @apply -left-1.5;
+}
+.select-with-tags label.MuiInputLabel-shrink.Mui-focused,
+.select-with-tags:focus-within .MuiInputLabel-shrink {
+  @apply text-blue-main;
+}

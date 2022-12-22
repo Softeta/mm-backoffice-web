@@ -1,0 +1,11 @@
+@import "./Checkbox/styles.css";
+@import "./TextField/styles.css";
+@import "./SearchField/styles.css";
+@import "./Select/styles.css";
+@import "./MenuItem/styles.css";
+@import "./Radio/styles.css";
+@import "./IconButton/styles.css";
+@import "./Tabs/styles.css";
+@import "./Switch/style.css";
+@import "./Link//style.css";
+@import "./Chart//style.css";

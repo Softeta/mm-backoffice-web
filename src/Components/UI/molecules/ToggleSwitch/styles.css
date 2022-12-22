@@ -1,0 +1,13 @@
+.toggle-switch.MuiButtonBase-root,
+.toggle-switch.MuiButtonBase-root:hover {
+  @apply bg-transparent text-grey-middle shadow-none px-6 py-1;
+}
+
+.toggle-switch.MuiButtonBase-root .MuiSvgIcon-root {
+  @apply mb-1;
+}
+
+.toggle-switch.selected.MuiButtonBase-root,
+.toggle-switch.selected.MuiButtonBase-root:hover {
+  @apply bg-white text-grey-dark shadow;
+}
